@@ -22,6 +22,8 @@
         <button class="button" v-on:click="increment">Add</button>
         <button class="button" v-on:click="reduce">Reduce</button>
         <p class="result" v-cloak>Results: {{counter}}</p>
+        <p class="result">Your Name: {{name}}</p>
+        <input type="text" v-on:input="changeName" />
       </section>
 
       <script src="app.js"></script>
