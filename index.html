@@ -21,7 +21,7 @@
         <p>Events in action</p>
         <button class="button" v-on:click="increment">Add</button>
         <button class="button" v-on:click="reduce">Reduce</button>
-        <p class="result">Results: {{counter}}</p>
+        <p class="result" v-cloak>Results: {{counter}}</p>
       </section>
 
       <script src="app.js"></script>
