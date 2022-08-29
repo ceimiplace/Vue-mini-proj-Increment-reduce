@@ -1,7 +1,17 @@
 "use strict";
 const vm = Vue.createApp({
   data() {
-    return {};
+    return {
+      counter: 0,
+    };
+  },
+  methods: {
+    increment() {
+      return ++this.counter;
+    },
+    reduce() {
+      return --this.counter;
+    },
   },
 });
-vm.mount();
+vm.mount("#app1");
