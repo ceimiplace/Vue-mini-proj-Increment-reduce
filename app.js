@@ -7,10 +7,10 @@ const vm = Vue.createApp({
   },
   methods: {
     increment() {
-      return ++this.counter;
+      ++this.counter;
     },
     reduce() {
-      return --this.counter;
+      --this.counter;
     },
   },
 });
